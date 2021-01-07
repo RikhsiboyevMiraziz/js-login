@@ -25,17 +25,14 @@
 
         var login = prompt('loginni kirgaz');
         var parol = prompt('parolni kirgaz');
-        if(login == 'login'){
-            console.log();
-        }else{
-            console.log(alert('login notogri'));
-        }
-        if(parol == 'parol'){
-            console.log();
-        }else{
-            console.log(alert('parol notogri'));
-        }if(login == 'login' && parol == 'parol'){
+        if(login == 'login' && parol == 'parol'){
             console.log(alert('welcome'));
+        }else if(login != 'login'){
+            console.log(alert('login notogri'));
+        }else if(parol != 'parol'){
+            console.log(alert('parol notogri'));
+        }else {
+            console.log();
         }
 
     </script>
